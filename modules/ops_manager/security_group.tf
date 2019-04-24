@@ -48,8 +48,8 @@ resource "aws_security_group" "ops_manager_security_group" {
   ingress {
     cidr_blocks = ["${var.vpc_cidr}"]
     protocol    = "tcp"
-    from_port   = 8444
-    to_port     = 8444
+    from_port   = 8844
+    to_port     = 8844
   }
 
   egress {
